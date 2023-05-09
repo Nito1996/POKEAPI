@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting PokeApi</title>
+    <link rel="icon" class="newIcon"
+        href="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\POKEAPI\Imgs\newIcon.png">
+    <link rel="stylesheet"
+        href="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\POKEAPI\style.css">
+</head>
+
+<body>
+    <header class="mainHeader"> <img class="imgHeader"
+            src="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\POKEAPI\Imgs\pokeapi_256.3fa72200.png"
+            alt="PokeApiImg" srcset="">
+    </header>
+    <div class="main-container">
+        <div class="record-input">
+            <h1 class="h1Left">Pokemon Details</h1>
+            <div id="inputsDiv">
+                <input type="search" name="mainInputSearch" id="mainInputSearch" placeholder="Loading...">
+                    <select name="selectTypes" id="selectTypes">
+                        <option style="background-color: #fff"; value='' selected >All Types</option>
+                        <option style="background-color: #A6B91A"; value="Bug">Bug</option>
+                        <option style="background-color: #F7D02C"; value="Electric">Electric</option>
+                        <option style="background-color: #D685AD"; value="Fairy">Fairy</option>
+                        <option style="background-color: #C22E28"; value="Fighting">Fighting</option>
+                        <option style="background-color: #EE8130"; value="Fire">Fire</option>
+                        <option style="background-color: #A98FF3"; value="Flying">Flying</option>
+                        <option style="background-color: #735797"; value="Ghost">Ghost</option>
+                        <option style="background-color: #7AC74C"; value="Grass">Grass</option>
+                        <option style="background-color: #E2BF65"; value="Ground">Ground</option>
+                        <option style="background-color: #96D9D6"; value="Ice">Ice</option>
+                        <option style="background-color: #A8A77A"; value="Normal">Normal</option>
+                        <option style="background-color: #A33EA1"; value="Poison">Poison</option>
+                        <option style="background-color: #F95587"; value="Psychic">Psychic</option>
+                        <option style="background-color: #B6A136"; value="Rock">Rock</option>
+                        <option style="background-color: #B7B7CE"; value="Steel">Steel</option>
+                        <option style="background-color: #6390F0"; value="Water">Water</option>
+                    </select>
+            </div>
+            <aside class="entry-form">
+                <ul id="asideUl">
+                    <div id="replaceableDiv"></div>
+                </ul>
+            </aside>
+        </div>
+        <div class="record-display">
+            <div id="showDiv">
+                <p class="firstMessage" style="display: flex;">Click on a pokemon to view its information</p>
+                <div class="mainShowDivBox" style="display: hidden;">
+                    <div class="showDivBoxName"></div>
+                    <div class="mainShowDivBoxTypes" style="display: none;">
+                        <p class="showDivBoxType0">
+                        </p>
+                        <p class="showDivBoxType1">
+                        </p>
+                    </div>
+                    <img class="showDivBoxImg" src="" alt="">
+                </div>
+            </div>
+            <div id="statsDiv" style="visibility: hidden;">
+                <div class="wrapper">
+                    <div class="tabs">
+                        <div class="tab">
+                            <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+                            <label for="tab-1" class="tab-label">Abilities</label>
+                            <div class="tab-content" id="tab1"> </div>
+                            <div class="tab">
+                                <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+                                <label for="tab-2" class="tab-label">Stats</label>
+                                <div class="tab-content" id="tab2"></div>
+                                <div class="tab">
+                                    <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+                                    <label for="tab-3" class="tab-label">Moves</label>
+                                    <div class="tab-content" id="tab3"></div>
+                                </div>
+                                <div class="tab">
+                                    <input type="radio" name="css-tabs" id="tab-4" class="tab-switch">
+                                    <label for="tab-4" class="tab-label">Height</label>
+                                    <div class="tab-content" id="tab4"></div>
+                                </div>
+                                <div class="tab">
+                                    <input type="radio" name="css-tabs" id="tab-5" class="tab-switch">
+                                    <label for="tab-5" class="tab-label">Experience</label>
+                                    <div class="tab-content" id="tab5"></div>
+                                </div>
+                                <div class="tab">
+                                    <input type="radio" name="css-tabs" id="tab-6" class="tab-switch">
+                                    <label for="tab-6" class="tab-label">Weight</label>
+                                    <div class="tab-content" id="tab6"></div>
+                                </div>
+                                <div class="record-container">
+                                </div>
+                            </div>
+                        </div>
+
+                        <script
+                            src="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\POKEAPI\app.js"></script>
+</body>
+
+</html>
